@@ -1,0 +1,49 @@
+r1=int(input("Enter no of rows of fst matrix"))
+c1=int(input("columns of fst matrix"))
+r2=int(input("Enter no of rows of 2nd matrx"))
+c2=int(input("Enter no of colums of 2nd matrix"))
+m1=[]
+m2=[]
+m3=[]
+print("Enter",r1*c1 ,"elmets of fst matrix")
+for i in range(0,r1):
+    s1=[]
+    for j in range(0,c1):
+        k=int(input())
+        s1.append(k)
+    m1.append(s1)
+print("Enter", r2*c2 , "Elemnts of 2nd matrix")
+for i in range(0,r2):
+    s2=[]
+    for j in range(0,c2):
+        l=int(input())
+        s2.append(l)
+    m2.append(s2)
+if(r1==r2 and c1==c2):
+    for i in range(0,r1):
+        s3=[]
+        for j in range(0,c1):
+            a=m1[i][j]+m2[i][j]
+            s3.append(a)
+        m3.append(s3)
+        print(m3)
+else:
+    print("Addion not possibel")
+s3=[]
+if(c1==r2 and c2==r1):
+    for i in range(0,r1):
+        s4=[]
+        for j in range(0,c2):
+            s=0
+            for k in range (0,c1):
+                s=s+m1[i][k]*m2[k][j]
+            s4.append(s)
+        s3.append(s4)
+    print(s3)
+else:
+    print("Mult not possible")
+    
+Identify the program
+                   
+                   
+                   
